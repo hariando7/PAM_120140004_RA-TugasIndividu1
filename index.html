@@ -6,8 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tugas Individu 1 - 120140004</title>
-    <link rel="stylesheet" href="style.css">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
         body {
             font-family: sans-serif;
             word-spacing: 1px;
@@ -18,9 +22,25 @@
             border-radius: 5px;
             background: #fff;
             border-top: 5px solid rgb(148, 182, 210);
-            margin: 3px auto;
-            width: 40%;
             color: rgb(159, 161, 165);
+            margin: 3px auto;
+            width: 280px;
+        }
+
+        .heading {
+            text-align: center;
+            font-size: 20px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            color: rgb(159, 161, 165);
+        }
+
+        .wrap-tabel {
+            height: 653px;
+            width: 280px;
+            border-radius: 10px;
+            margin: auto;
+            background-color: #DAE5D0;
         }
 
         .container tr th {
@@ -59,15 +79,10 @@
 </head>
 
 <body>
-    <section>
-        <table align="center">
-            <tr align="center">
-                <td>
-                    <h2>
-                        <b>TABEL MAHASISWA</b>
-                    </h2>
-                </td>
-        </table>
+    <div class="wrap-table">
+        <h2 class="heading">
+            <b>TABEL MAHASISWA</b>
+        </h2>
         <div class="container" id="mahasiswa">
             <table>
                 <thead>
@@ -142,7 +157,7 @@
                 </tbody>
             </table>
         </div>
-    </section>
+    </div>
 
     <script>
         const addMutuRows = () => {
